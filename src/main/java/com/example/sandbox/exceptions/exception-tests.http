@@ -1,0 +1,17 @@
+### Тест checked exception
+GET http://localhost:8080/exceptions/checked
+
+### Тест unchecked exception
+GET http://localhost:8080/exceptions/unchecked
+
+### Тест custom exception
+GET http://localhost:8080/exceptions/custom
+
+### Тест try-catch-finally
+GET http://localhost:8080/exceptions/try-catch
+
+### Тест multiple catch
+GET http://localhost:8080/exceptions/multiple-catch
+
+### Тест несуществующего эндпоинта (для проверки обработки 404)
+GET http://localhost:8080/exceptions/non-existent

@@ -1,0 +1,29 @@
+@baseUrl = http://localhost:8080
+
+### Чтение файла с использованием BufferedReader
+GET {{baseUrl}}/file-operations/read-buffered
+
+### Чтение файла с использованием Scanner
+GET {{baseUrl}}/file-operations/read-scanner
+
+### Чтение файла с использованием NIO
+GET {{baseUrl}}/file-operations/read-nio
+
+### Запись в файл
+POST {{baseUrl}}/file-operations/write
+Content-Type: application/json
+
+[
+  "Это первая строка.",
+  "Это вторая строка.",
+  "А это третья строка."
+]
+
+### Добавление в конец файла
+POST {{baseUrl}}/file-operations/append
+Content-Type: text/plain
+
+Это новая строка, добавленная в конец файла.
+
+### Подсчет слов в файле
+GET {{baseUrl}}/file-operations/count-words
